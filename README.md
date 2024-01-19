@@ -1,5 +1,18 @@
 # Chat GPT Conversation Package
 
+## Feature :
+* Ability to choose the IA engine :
+  * gpt-4-1106-preview
+  * gpt-4
+  * gpt-4-32k
+  * gpt-3.5-turbo-1106
+  * gpt-3.5-turbo
+  * gpt-3.5-turbo-16k
+  * gpt-3.5-turbo-instruct
+
+* Ability to limit token using a `setTokenLimit` method
+* Remember all conversation in instance. Conversation can be hydrated using the `setConversation` method. (conversation array should follow the chat GPT conversation pattern to work)
+
 ## Example :
 ```php
 // example.php
@@ -18,5 +31,4 @@ echo $reply.PHP_EOL;
 $userQuestion = "I gave you my first name on the last question ? Can you repeat it please ?";
 $reply = $chatGPT->ask($userQuestion);
 echo $reply.PHP_EOL;
-
 ```
