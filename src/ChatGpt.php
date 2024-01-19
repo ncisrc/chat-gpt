@@ -71,8 +71,12 @@ class ChatGpt
     $this->tokenLimit = $tokenLimit;
   }
 
-  public function getFullConversation() : array {
+  public function getConversation() : array {
     return $this->conversation;
+  }
+
+  public function setConversation(array $conversation) : void {
+    $this->conversation = $conversation;
   }
 
   public function getLastQuestion() : string | null {
