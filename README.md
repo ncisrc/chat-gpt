@@ -1,6 +1,6 @@
 # Chat GPT Conversation Package
 
-## Feature :
+## Features :
 * Ability to choose the IA engine :
   * gpt-4-1106-preview
   * gpt-4
@@ -14,7 +14,15 @@
 * Remember all conversation in instance. Conversation can be hydrated using the `setConversation(array)` method. (conversation array should follow the chat GPT conversation pattern to work)
 * Ability to compact conversation to bypass the maximum token limit using `compactConversation()` method (see demo).
 
-## Example :
+## Conversation Compression
+
+To permit to use relevant information on conversation without take too much tokens, this library implent a `compactConversation()` method. Here is a demo :
+
+![Script Demo](demo.jpg)
+
+As you seen, the UsedToken has been reduced on the last question after using `compactConversation()` method without forgetting the name of the user. The array dump is the content of the conversation array, that will be use for future questions.
+
+## Use example :
 ```php
 // example.php
 require_once('vendor/autoload.php');

@@ -95,6 +95,11 @@ class ChatGpt
     return $this->lastResponse;
   }
 
+  public function getLastConsumedTokens() : int {
+    if (!$this->lastResponse) return 0;
+    return $this->lastResponse['usage']['total_tokens'];
+  }
+
   public function execute() : bool
   {
     if (trim($this->userQuery) == "") {
