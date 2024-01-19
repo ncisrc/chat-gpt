@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ncisrc\\ChatGpt\\' => array($baseDir . '/src'),
+    'Nci\\OpenAi\\' => array($baseDir . '/src'),
 );

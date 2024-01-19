@@ -9,12 +9,12 @@ class ComposerStaticInit03597b61ca60e414de1c301ddac57d4f
     public static $prefixLengthsPsr4 = array (
         'N' => 
         array (
-            'Ncisrc\\ChatGpt\\' => 15,
+            'Nci\\OpenAi\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Ncisrc\\ChatGpt\\' => 
+        'Nci\\OpenAi\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
