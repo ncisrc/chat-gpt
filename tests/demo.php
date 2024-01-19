@@ -23,3 +23,6 @@ echo "User question: $userQuestion".PHP_EOL;
 $reply = $chatGPT->ask($userQuestion);
 echo "--------".PHP_EOL;
 echo "AI Reply : $reply".PHP_EOL;
+
+$chatGPT->compactConversation();
+print_r($chatGPT->getConversation());

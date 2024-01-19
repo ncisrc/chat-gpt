@@ -10,8 +10,9 @@
   * gpt-3.5-turbo-16k
   * gpt-3.5-turbo-instruct
 
-* Ability to limit token using a `setTokenLimit` method
-* Remember all conversation in instance. Conversation can be hydrated using the `setConversation` method. (conversation array should follow the chat GPT conversation pattern to work)
+* Ability to limit token using a `setTokenLimit(int)` method
+* Remember all conversation in instance. Conversation can be hydrated using the `setConversation(array)` method. (conversation array should follow the chat GPT conversation pattern to work)
+* Ability to compact conversation to bypass the maximum token limit using `compactConversation()` method (see demo).
 
 ## Example :
 ```php

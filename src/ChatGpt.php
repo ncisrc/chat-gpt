@@ -121,6 +121,14 @@ class ChatGpt
     return true;
   }
 
+  public function compactConversation() : void {
+    $reply = $this->ask("Resume our conversation, to remember important informations we said in less than 300 words. Be concise and use our conversation language to write it.");
+    $this->conversation = [
+      ['role' => 'user', 'content' => 'Do you remember our previous conversation ?'],
+      ['role' => 'assistant', 'content' => $reply],
+    ];
+  }
+
   private function queryData() : array {
     $queryData = [
       'model' => $this->apiEngineModel,
